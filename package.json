@@ -1,0 +1,52 @@
+{
+  "name": "medibank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "jest": {
+    "automock": false,
+    "collectCoverageFrom": [
+      "src/**/*.tsx",
+      "!**/node_modules/**",
+      "!src/index.tsx"
+    ],
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
+  "keywords": [],
+  "author": "Shaune West",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "emotion": "10.0.27",
+    "emotion-server": "10.0.27",
+    "next": "latest",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-query": "^1.5.9"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.0.1",
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^10.3.0",
+    "@testing-library/react-hooks": "^3.3.0",
+    "@testing-library/user-event": "^12.0.4",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1"
+  }
+}
